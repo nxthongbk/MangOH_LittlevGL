@@ -15,12 +15,10 @@ int main(void)
     disp_drv.disp_flush = fbdev_flush;      /*It flushes the internal graphical buffer to the frame buffer*/
     lv_disp_drv_register(&disp_drv);
 
-
     /*Create a title label*/
     lv_obj_t * label = lv_label_create(lv_scr_act(), NULL);
     lv_label_set_text(label, "Hello World");
     lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
-
 
     /*Handle LitlevGL tasks (tickless mode)*/
     while(1) {

@@ -45,6 +45,6 @@
 4. Compile the code and load it to your embedded hardware
 
 ## Related repositories
-* Littlevgl: https://github.com/littlevgl/lv_projects
+* Littlevgl: https://github.com/littlevgl/lvgl
 * Examples: https://github.com/littlevgl/lv_examples
 * Drivers: https://github.com/littlevgl/lv_drivers

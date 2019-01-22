@@ -26,3 +26,17 @@
      disp_drv.disp_flush = fbdev_flush;
      lv_disp_drv_register(&disp_drv);
      ```
+ * Create lable and allign object
+    ```c
+    lv_obj_t * label = lv_label_create(lv_scr_act(), NULL);
+    lv_label_set_text(label, "Hello World!");
+    lv_obj_align(label, NULL, LV_ALIGN_IN_TOP_MID, 0, 5);
+    ```
+  * Handle LitlevGL tasks
+  ```c
+    while(1) {
+        lv_tick_inc(5);
+        lv_task_handler();
+        usleep(5000);
+    }
+    ```

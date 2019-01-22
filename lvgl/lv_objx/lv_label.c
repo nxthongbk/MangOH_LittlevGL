@@ -64,7 +64,6 @@ static lv_signal_func_t ancestor_signal;
  */
 lv_obj_t * lv_label_create(lv_obj_t * par, const lv_obj_t * copy)
 {
-    printf("start create lable\n");
     LV_LOG_TRACE("label create started");
 
     /*Create a basic object*/
@@ -118,7 +117,6 @@ lv_obj_t * lv_label_create(lv_obj_t * par, const lv_obj_t * copy)
             if(ext->text == NULL) return NULL;
             memcpy(ext->text, copy_ext->text, lv_mem_get_size(copy_ext->text));
         }
-        printf("Start copy mem");
         memcpy(ext->dot_tmp, copy_ext->dot_tmp, sizeof(ext->dot_tmp));
         ext->dot_end = copy_ext->dot_end;
 

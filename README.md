@@ -7,9 +7,8 @@
    * Update default font type: `#define LV_FONT_DEFAULT        &lv_font_monospace_8` for using monochome display.
    * Update font size: `#define USE_LV_FONT_MONOSPACE_8         1` for using font size 8.
 2. In your *main.c*: 
-  ```c
-    #include "lvgl/lvgl.h"
-  ```
+      ```c
+      #include "lvgl/lvgl.h"
 
 3. In your main function:
  * Init lvgl: 

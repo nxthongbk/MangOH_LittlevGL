@@ -183,7 +183,6 @@ lv_obj_t * lv_obj_create(lv_obj_t * parent, const  lv_obj_t * copy)
     /*parent != NULL create normal obj. on a parent*/
     else {
         LV_LOG_TRACE("Object create started");
-        printf("Object create started\n");
         new_obj = lv_ll_ins_head(&(parent)->child_ll);
         lv_mem_assert(new_obj);
         if(new_obj == NULL) return NULL;

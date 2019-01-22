@@ -1,4 +1,4 @@
-# Integrate with littlevGL on mangOH
+# Integrate with LittlevGL on mangOH
 
 <img src="https://user-images.githubusercontent.com/17214533/51510335-40256700-1e2f-11e9-8903-af65c5368326.jpg" width="350" alt="accessibility text">
 
@@ -35,3 +35,4 @@
           lv_task_handler();
           usleep(5000);
       }
+4. Compile the code and load it to your embedded hardware

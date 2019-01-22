@@ -15,17 +15,14 @@
  * Init framebuffer device: 
      ```c
      fbdev_init();
-     
  * Add a display the LittlevGL sing the frame buffer driver:
      ```c
      lv_disp_drv_t disp_drv;
      lv_disp_drv_init(&disp_drv);
-     
  * Flushes the internal graphical buffer to the frame buffer:
      ```c
      disp_drv.disp_flush = fbdev_flush;
      lv_disp_drv_register(&disp_drv);
-     ```
  * Create lable and allign object
     ```c
     lv_obj_t * label = lv_label_create(lv_scr_act(), NULL);

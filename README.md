@@ -10,12 +10,12 @@
       ```c
       #include "lvgl/lvgl.h"
 
-3. In your main function:
- Init lvgl: 
+3. In your main function:\
+Init lvgl: 
      ```c
-     lv_init();
-    
- Init framebuffer device: 
+     lv_init();```
+     
+Init framebuffer device: 
      ```c
      fbdev_init();
  Add a display the LittlevGL sing the frame buffer driver:

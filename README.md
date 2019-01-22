@@ -8,12 +8,21 @@
    * Update font size: `#define USE_LV_FONT_MONOSPACE_8	   	   1` for using font size 8.
 2. In your *main.c*: *#include "lvgl/lvgl.h"
 3. In your main function:
- * Init lvgl: `lv_init();`
- * Init framebuffer device: `fbdev_init();`
+ * Init lvgl: 
+ ```c
+     lv_init();
+  ```
+ * Init framebuffer device: 
+ ```c
+     fbdev_init();
+ ```
  * Add a display the LittlevGL sing the frame buffer driver:
      ```c
      lv_disp_drv_t disp_drv;
-     lv_disp_drv_init(&disp_drv);```
+     lv_disp_drv_init(&disp_drv);
+     ```
  *Flushes the internal graphical buffer to the frame buffer:
-     `disp_drv.disp_flush = fbdev_flush;`   
-     `lv_disp_drv_register(&disp_drv);`
+ ```c
+     disp_drv.disp_flush = fbdev_flush;`   
+     lv_disp_drv_register(&disp_drv);`
+ ```

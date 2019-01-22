@@ -27,7 +27,7 @@
      disp_drv.disp_flush = fbdev_flush;
      lv_disp_drv_register(&disp_drv);
      
-  * Create lable and allign object:
+  * Create label and align object:
       ```c
       lv_obj_t * label = lv_label_create(lv_scr_act(), NULL);
       lv_label_set_text(label, "Hello World");

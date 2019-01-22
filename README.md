@@ -31,8 +31,8 @@
   * Create lable and allign object:
       ```c
       lv_obj_t * label = lv_label_create(lv_scr_act(), NULL);
-      lv_label_set_text(label, "Hello World!");
-      lv_obj_align(label, NULL, LV_ALIGN_IN_TOP_MID, 0, 5);
+      lv_label_set_text(label, "Hello World");
+      lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
     ```
     
   * Handle LitlevGL tasks

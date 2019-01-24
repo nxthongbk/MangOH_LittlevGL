@@ -2,20 +2,19 @@
 <img src="https://user-images.githubusercontent.com/17214533/51513230-630a4800-1e3c-11e9-9d45-39a2c76c2663.jpg" width="350" alt="accessibility text">               <img src="https://user-images.githubusercontent.com/17214533/51510335-40256700-1e2f-11e9-8903-af65c5368326.jpg" width="350" alt="accessibility text">
 
 ## Project Set-up
-1. Create Project and clone lvgl library:
+1. clone lvgl library and create project:
     * lvgl: https://github.com/littlevgl/lvgl
     * lvgl drivers: https://github.com/littlevgl/lv_drivers
     * lvgl examples: https://github.com/littlevgl/lv_examples
-2. Update config file:
     * Copy `lvgl/lv_conf_templ.h` change the name to `lv_conf.h` and place next to the lvgl folder
-    * Copy name to `lv_conf.h` and place next to the lvgl folder
+    * Copy `lvgl/lv_ex_conf_templ.h` change the name to `lv_ex_conf.h` and place next to the lvgl folder
     * We have project tree like that:
     * <img src="https://user-images.githubusercontent.com/17214533/51661409-612eb900-1fe3-11e9-9b20-0aaa71168f5f.png" width="200" alt="accessibility text"> 
 
-3. Update configure file for monochome display in `lv_conf.h`:
+2. Update configure file for monochome display in `lv_conf.h`:
    * Update default font type: `#define LV_FONT_DEFAULT        &lv_font_monospace_8` for using monochome font.
    * Update font size: `#define USE_LV_FONT_MONOSPACE_8         1` for using font size 8.
-5. Make Test:
+3. Make Test:
    * In your *main.c*: 
       ```c
       #include "lvgl/lvgl.h"
@@ -43,7 +42,7 @@
      lv_label_set_text(label, "Hello World");
      lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
    
-6. Compile the code and load it to your embedded hardware
+4. Compile the code and load it to your embedded hardware
     
   * Handle LitlevGL tasks
     ```c

@@ -84,14 +84,25 @@
    
    
 6. Display Another Object:
-  * Level Metter:
-  Handle LitlevGL tasks
+  * Arc:
+  * Line Metter:
   ```c
-      while(1) {
-          lv_tick_inc(5);
-          lv_task_handler();
-          usleep(5000);
-      }
+   static lv_style_t style_lmeter1;
+   lv_style_copy(&style_lmeter1, &lv_style_pretty_color);
+   style_lmeter1.line.width = 2;
+   style_lmeter1.line.color = LV_COLOR_BLACK;
+   style_lmeter1.body.main_color = LV_COLOR_BLACK;         /*Light blue*/
+   style_lmeter1.body.grad_color = LV_COLOR_WHITE;         /*Dark blue*/
+
+   /*Create the first line meter */
+   lv_obj_t * lmeter;
+   lmeter = lv_lmeter_create(lv_scr_act(), NULL);
+   lv_lmeter_set_range(lmeter, 0, 100);                   /*Set the range*/
+   lv_lmeter_set_value(lmeter, 80);                       Set the current value
+   lv_lmeter_set_style(lmeter, &style_lmeter1);           /*Apply the new style*/
+   lv_obj_set_size(lmeter, 80, 80);
+   lv_obj_align(lmeter, NULL, LV_ALIGN_IN_BOTTOM_LEFT, 20, -80);
+  
 
 
 ## Related repositories

@@ -85,7 +85,21 @@
    
 6. Display Another Object:
   * Arc:
-  * Line Metter:
+   ``c
+      /*Create style for the Arcs*/
+       lv_style_t style;
+       lv_style_copy(&style, &lv_style_plain);
+       style.line.color = LV_COLOR_BLACK;           /*Arc color*/
+       style.line.width = 8;                       /*Arc width*/
+
+       /*Create an Arc*/
+       lv_obj_t * arc = lv_arc_create(lv_scr_act(), NULL);
+       lv_arc_set_style(arc, LV_ARC_STYLE_MAIN, &style);          Use the new style
+       lv_arc_set_angles(arc, 0, 270);
+       lv_obj_set_size(arc, 80, 80);
+       lv_obj_align(arc, NULL, LV_ALIGN_CENTER, 0, 0);
+ 
+ * Line Metter:
   ```c
    static lv_style_t style_lmeter1;
    lv_style_copy(&style_lmeter1, &lv_style_pretty_color);

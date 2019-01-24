@@ -130,6 +130,10 @@
       lv_label_set_style(label, &lv_style_pretty);
       lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
 ```  
+
+   <img src="https://user-images.githubusercontent.com/17214533/51670508-5848e200-1ff9-11e9-9e82-0d3674a0aa87.jpg" width="150" alt="accessibility text"> 
+
+
 * Preload
 ```c
    static lv_style_t style;

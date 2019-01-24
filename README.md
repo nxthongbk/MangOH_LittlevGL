@@ -98,7 +98,7 @@
    lv_obj_t * lmeter;
    lmeter = lv_lmeter_create(lv_scr_act(), NULL);
    lv_lmeter_set_range(lmeter, 0, 100);                   /*Set the range*/
-   lv_lmeter_set_value(lmeter, 80);                       Set the current value
+   lv_lmeter_set_value(lmeter, 80);                       /*Set the current value*/
    lv_lmeter_set_style(lmeter, &style_lmeter1);           /*Apply the new style*/
    lv_obj_set_size(lmeter, 80, 80);
    lv_obj_align(lmeter, NULL, LV_ALIGN_IN_BOTTOM_LEFT, 20, -80);

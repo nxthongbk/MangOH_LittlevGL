@@ -61,8 +61,9 @@
            lv_label_set_text(label, buf);
        }
    }
-   
-    * In main function:
+       
+       
+  * In main function:
     ```c
     label = lv_label_create(lv_scr_act(), NULL);
     lv_obj_align(label, NULL, LV_ALIGN_CENTER, -20, 0);
@@ -86,7 +87,7 @@
 6. Display Another Object:
   * Level Metter:
   Handle LitlevGL tasks
-    ```c
+  ```c
       while(1) {
           lv_tick_inc(5);
           lv_task_handler();

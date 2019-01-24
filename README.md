@@ -14,7 +14,7 @@
 2. Update configure file for monochome display in `lv_conf.h`:
    * Update default font type: `#define LV_FONT_DEFAULT        &lv_font_monospace_8` for using monochome font.
    * Update font size: `#define USE_LV_FONT_MONOSPACE_8         1` for using font size 8.
-3. Make Test:
+3. Create a application to display a label:
    * In your *main.c*: 
       ```c
       #include "lvgl/lvgl.h"
@@ -42,7 +42,8 @@
      lv_label_set_text(label, "Hello World");
      lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
    
-4. Compile the code and load it to your embedded hardware
+4. Compile the code and load it to your embedded hardware:
+ <img src="https://user-images.githubusercontent.com/17214533/51663301-f1bbc800-1fe8-11e9-99c6-b66539866027.jpg" width="200" alt="accessibility text"> 
     
   * Handle LitlevGL tasks
     ```c

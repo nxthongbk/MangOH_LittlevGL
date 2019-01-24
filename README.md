@@ -5,6 +5,7 @@
 1. Create Project and clone lvgl library:
     * lvgl: https://github.com/littlevgl/lvgl
     * lvgl drivers: https://github.com/littlevgl/lv_drivers
+    * lvgl examples: https://github.com/littlevgl/lv_examples
 2. Update config file:
     * Copy `lvgl/lv_conf_templ.h` change the name to `lv_conf.h` and place next to the lvgl folder
     * Copy name to `lv_conf.h` and place next to the lvgl folder

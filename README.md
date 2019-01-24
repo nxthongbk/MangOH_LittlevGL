@@ -11,15 +11,15 @@
     * We have project tree like that:
     * <img src="https://user-images.githubusercontent.com/17214533/51661409-612eb900-1fe3-11e9-9b20-0aaa71168f5f.png" width="200" alt="accessibility text"> 
 
-4. Update configure file: `lv_conf.h`:
+3. Update configure file for monochome display in `lv_conf.h`:
    * Update default font type: `#define LV_FONT_DEFAULT        &lv_font_monospace_8` for using monochome font.
    * Update font size: `#define USE_LV_FONT_MONOSPACE_8         1` for using font size 8.
-2. In your *main.c*: 
+5. Make Test:
+   * In your *main.c*: 
       ```c
       #include "lvgl/lvgl.h"
       #include "lv_drivers/display/fbdev.h"
 
-3. In your main function:
   * Init lvgl: 
      ```c
      lv_init();
@@ -36,7 +36,7 @@
      disp_drv.disp_flush = fbdev_flush;
      lv_disp_drv_register(&disp_drv);
      
-  * Create label and align object:
+  1. Display a label:
       ```c
       lv_obj_t * label = lv_label_create(lv_scr_act(), NULL);
       lv_label_set_text(label, "Hello World");
@@ -51,7 +51,7 @@
           usleep(5000);
       }
 
-4. Compile the code and load it to your embedded hardware
+7. Compile the code and load it to your embedded hardware
 
 ## Related repositories
 * Littlevgl: https://github.com/littlevgl/lvgl

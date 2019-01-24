@@ -102,6 +102,13 @@
    lv_lmeter_set_style(lmeter, &style_lmeter1);           /*Apply the new style*/
    lv_obj_set_size(lmeter, 80, 80);
    lv_obj_align(lmeter, NULL, LV_ALIGN_IN_BOTTOM_LEFT, 20, -80);
+   
+   // /*Add a label to show the current value*/
+   lv_obj_t * label;
+   label = lv_label_create(lmeter, NULL);
+   lv_label_set_text(label, "30%");
+   lv_label_set_style(label, &lv_style_pretty);
+   lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
   
 
 

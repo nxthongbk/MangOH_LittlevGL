@@ -110,9 +110,9 @@
    static lv_style_t style_lmeter1;
    lv_style_copy(&style_lmeter1, &lv_style_pretty_color);
    style_lmeter1.line.width = 2;
-   style_lmeter1.line.color = LV_COLOR_BLACK;
+   style_lmeter1.line.color = LV_COLOR_WHITE;
    style_lmeter1.body.main_color = LV_COLOR_BLACK;         /*Light blue*/
-   style_lmeter1.body.grad_color = LV_COLOR_WHITE;         /*Dark blue*/
+   style_lmeter1.body.grad_color = LV_COLOR_BLACK;         /*Dark blue*/
 
    /*Create the first line meter */
    lv_obj_t * lmeter;

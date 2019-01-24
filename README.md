@@ -21,21 +21,19 @@
       #include "lv_drivers/display/fbdev.h"
 
    * In main function:
-     Init lvgl: 
+     
      ```c
+     //Init lvgl 
      lv_init();
      
-     //Init framebuffer device: 
-     ```c
+     //Init framebuffer device
      fbdev_init();
      
-     //Add a display the LittlevGL sing the frame buffer driver:
-     ```c
+     //Add a display the LittlevGL sing the frame buffer driver
      lv_disp_drv_t disp_drv;
      lv_disp_drv_init(&disp_drv);
      
-     //Flush the internal graphical buffer to the frame buffer:
-     ```c
+     //Flush the internal graphical buffer to the frame buffer
      disp_drv.disp_flush = fbdev_flush;
      lv_disp_drv_register(&disp_drv);
      

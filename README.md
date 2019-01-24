@@ -46,7 +46,9 @@
 
       <img src="https://user-images.githubusercontent.com/17214533/51663543-a6ee8000-1fe9-11e9-8416-18bc5bb6fce1.png" width="150" alt="accessibility text"> 
     
-  * Handle LitlevGL tasks
+5. Display Another Object:
+  * Level Metter:
+  Handle LitlevGL tasks
     ```c
       while(1) {
           lv_tick_inc(5);

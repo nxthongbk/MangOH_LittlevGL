@@ -37,12 +37,12 @@
      disp_drv.disp_flush = fbdev_flush;
      lv_disp_drv_register(&disp_drv);
      
-  1. Display a label:
-      ```c
-      lv_obj_t * label = lv_label_create(lv_scr_act(), NULL);
-      lv_label_set_text(label, "Hello World");
-      lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
-    ```
+     //Display a label
+     lv_obj_t * label = lv_label_create(lv_scr_act(), NULL);
+     lv_label_set_text(label, "Hello World");
+     lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
+   
+6. Compile the code and load it to your embedded hardware
     
   * Handle LitlevGL tasks
     ```c
@@ -52,7 +52,6 @@
           usleep(5000);
       }
 
-7. Compile the code and load it to your embedded hardware
 
 ## Related repositories
 * Littlevgl: https://github.com/littlevgl/lvgl

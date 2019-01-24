@@ -62,13 +62,13 @@
        }
    }
    
-  * In main function:
+    * In main function:
     ```c
     label = lv_label_create(lv_scr_act(), NULL);
     lv_obj_align(label, NULL, LV_ALIGN_CENTER, -20, 0);
     lv_task_create(label_refresher_task, 1000, LV_TASK_PRIO_MID, NULL);
     
-     ```while(1) {
+     while(1) {
         lv_tick_inc(5);
         lv_task_handler();
         usleep(1000);

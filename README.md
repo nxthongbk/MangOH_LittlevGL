@@ -85,7 +85,7 @@
    
 6. Display Another Object:
   * Arc:
-   ``c
+   ```c
       /*Create style for the Arcs*/
        lv_style_t style;
        lv_style_copy(&style, &lv_style_plain);

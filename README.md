@@ -19,7 +19,6 @@
       ```c
       #include "lvgl/lvgl.h"
       #include "lv_drivers/display/fbdev.h"
-
    * In main function:
      
      ```c

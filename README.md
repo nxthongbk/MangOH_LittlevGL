@@ -107,28 +107,28 @@
  ```
  * Line Metter:
   ```c
-   static lv_style_t style_lmeter1;
-   lv_style_copy(&style_lmeter1, &lv_style_pretty_color);
-   style_lmeter1.line.width = 2;
-   style_lmeter1.line.color = LV_COLOR_WHITE;
-   style_lmeter1.body.main_color = LV_COLOR_BLACK;         /*Light blue*/
-   style_lmeter1.body.grad_color = LV_COLOR_BLACK;         /*Dark blue*/
+      static lv_style_t style_lmeter1;
+      lv_style_copy(&style_lmeter1, &lv_style_pretty_color);
+      style_lmeter1.line.width = 2;
+      style_lmeter1.line.color = LV_COLOR_WHITE;
+      style_lmeter1.body.main_color = LV_COLOR_BLACK;         /*Light blue*/
+      style_lmeter1.body.grad_color = LV_COLOR_BLACK;         /*Dark blue*/
 
-   /*Create the first line meter */
-   lv_obj_t * lmeter;
-   lmeter = lv_lmeter_create(lv_scr_act(), NULL);
-   lv_lmeter_set_range(lmeter, 0, 100);                   /*Set the range*/
-   lv_lmeter_set_value(lmeter, 80);                       /*Set the current value*/
-   lv_lmeter_set_style(lmeter, &style_lmeter1);           /*Apply the new style*/
-   lv_obj_set_size(lmeter, 80, 80);
-   lv_obj_align(lmeter, NULL, LV_ALIGN_IN_BOTTOM_LEFT, 20, -80);
-   
-   // /*Add a label to show the current value*/
-   lv_obj_t * label;
-   label = lv_label_create(lmeter, NULL);
-   lv_label_set_text(label, "30%");
-   lv_label_set_style(label, &lv_style_pretty);
-   lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
+      /*Create the first line meter */
+      lv_obj_t * lmeter;
+      lmeter = lv_lmeter_create(lv_scr_act(), NULL);
+      lv_lmeter_set_range(lmeter, 0, 100);                   /*Set the range*/
+      lv_lmeter_set_value(lmeter, 80);                       /*Set the current value*/
+      lv_lmeter_set_style(lmeter, &style_lmeter1);           /*Apply the new style*/
+      lv_obj_set_size(lmeter, 80, 80);
+      lv_obj_align(lmeter, NULL, LV_ALIGN_IN_BOTTOM_LEFT, 20, -80);
+
+      // /*Add a label to show the current value*/
+      lv_obj_t * label;
+      label = lv_label_create(lmeter, NULL);
+      lv_label_set_text(label, "30%");
+      lv_label_set_style(label, &lv_style_pretty);
+      lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
 ```  
 
 

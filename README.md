@@ -98,7 +98,7 @@
        lv_arc_set_angles(arc, 0, 270);
        lv_obj_set_size(arc, 80, 80);
        lv_obj_align(arc, NULL, LV_ALIGN_CENTER, 0, 0);
- 
+ ```
  * Line Metter:
   ```c
    static lv_style_t style_lmeter1;
@@ -123,7 +123,7 @@
    lv_label_set_text(label, "30%");
    lv_label_set_style(label, &lv_style_pretty);
    lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
-  
+```  
 
 
 ## Related repositories

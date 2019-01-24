@@ -43,7 +43,7 @@
      lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
    
 4. Compile the code and load it to your embedded hardware:
- <img src="https://user-images.githubusercontent.com/17214533/51663301-f1bbc800-1fe8-11e9-99c6-b66539866027.jpg" width="200" alt="accessibility text"> 
+ <img src="https://user-images.githubusercontent.com/17214533/51663543-a6ee8000-1fe9-11e9-8416-18bc5bb6fce1.png" width="200" alt="accessibility text"> 
     
   * Handle LitlevGL tasks
     ```c

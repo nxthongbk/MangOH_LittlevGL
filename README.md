@@ -46,7 +46,44 @@
 
       <img src="https://user-images.githubusercontent.com/17214533/51663543-a6ee8000-1fe9-11e9-8416-18bc5bb6fce1.png" width="150" alt="accessibility text"> 
     
-5. Display Another Object:
+5. Display Data in realtime:
+   * In your *main.c*:
+   ```c
+   lv_obj_t * label;
+   uint32_t adc_value;
+
+   void label_refresher_task(void * p)
+   {
+       if(lv_obj_get_screen(label) == lv_scr_act())
+       {
+           char buf[32];
+           sprintf(buf,"Vol: %dV", adc_value);
+           lv_label_set_text(label, buf);
+       }
+   }
+   
+  * In main function:
+    ```c
+    label = lv_label_create(lv_scr_act(), NULL);
+    lv_obj_align(label, NULL, LV_ALIGN_CENTER, -20, 0);
+    lv_task_create(label_refresher_task, 1000, LV_TASK_PRIO_MID, NULL);
+    
+     ```while(1) {
+        lv_tick_inc(5);
+        lv_task_handler();
+        usleep(1000);
+
+        static uint32_t cnt;
+        cnt++;
+        if(cnt > 500)
+        {
+             cnt = 0;
+             adc_value++;
+        }
+    }
+   
+   
+6. Display Another Object:
   * Level Metter:
   Handle LitlevGL tasks
     ```c

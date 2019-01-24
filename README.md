@@ -130,6 +130,22 @@
       lv_label_set_style(label, &lv_style_pretty);
       lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
 ```  
+* Preload
+```c
+      static lv_style_t style;
+      lv_style_copy(&style, &lv_style_plain);
+      style.line.width = 10;                         /*10 px thick arc*/
+      style.line.color = LV_COLOR_BLACK;       /*Blueish arc color*/
+
+      style.body.border.color = LV_COLOR_WHITE; /*Gray background color*/
+      style.body.border.width = 10;
+      style.body.padding.hor = 0;
+
+      /*Create a Preloader object*/
+      lv_obj_t * preload = lv_preload_create(lv_scr_act(), NULL);
+      lv_obj_set_size(preload, 100, 100);
+      lv_obj_align(preload, NULL, LV_ALIGN_CENTER, 0, 0);
+      lv_preload_set_style(preload, LV_PRELOAD_STYLE_MAIN, &style);
 
 
 ## Related repositories

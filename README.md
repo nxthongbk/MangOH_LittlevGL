@@ -3,13 +3,13 @@
 
 ## Project Set-up
 1. Create Project and clone lvgl library:
-  * lvgl: https://github.com/littlevgl/lvgl
-  * lvgl drivers: https://github.com/littlevgl/lv_drivers
+    * lvgl: https://github.com/littlevgl/lvgl
+    * lvgl drivers: https://github.com/littlevgl/lv_drivers
 2. Update config file:
-  * Copy `lvgl/lv_conf_templ.h` change the name to `lv_conf.h` and place next to the lvgl folder
-  * Copy name to `lv_conf.h` and place next to the lvgl folder
-  * We have project tree like that:
-  * <img src="https://user-images.githubusercontent.com/17214533/51661409-612eb900-1fe3-11e9-9b20-0aaa71168f5f.png" width="200" alt="accessibility text"> 
+    * Copy `lvgl/lv_conf_templ.h` change the name to `lv_conf.h` and place next to the lvgl folder
+    * Copy name to `lv_conf.h` and place next to the lvgl folder
+    * We have project tree like that:
+    * <img src="https://user-images.githubusercontent.com/17214533/51661409-612eb900-1fe3-11e9-9b20-0aaa71168f5f.png" width="200" alt="accessibility text"> 
 
 4. Update configure file: `lv_conf.h`:
    * Update default font type: `#define LV_FONT_DEFAULT        &lv_font_monospace_8` for using monochome font.

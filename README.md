@@ -153,10 +153,11 @@
    lv_preload_set_style(preload, LV_PRELOAD_STYLE_MAIN, &style);
    ```
    * Image:
-   > Convert image to hex data by: https://littlevgl.com/image-converter.__
-    Select Color is true color with alpha __
-    Output format is C array __
-   Then copy hex data to img_flower_icon.c
+   
+      Convert image to hex data by: https://littlevgl.com/image-converter.   
+      Select Color is true color with alpha.  
+      Output format is C array.  
+      Then copy hex data to img_flower_icon.c  
    ```c
     lv_obj_t * img1 = lv_img_create(lv_scr_act(), NULL);
     lv_img_set_src(img1, &img_flower_icon);

@@ -151,7 +151,19 @@
    lv_obj_align(preload, NULL, LV_ALIGN_CENTER, 0, 0);
    lv_preload_set_style(preload, LV_PRELOAD_STYLE_MAIN, &style);
    ```
+   * Image:
+   Convert image to hex data by: https://littlevgl.com/image-converter
+   Then copy image data to img_flower_icon.c
+   ```c
+    lv_obj_t * img1 = lv_img_create(lv_scr_act(), NULL);
+    lv_img_set_src(img1, &img_flower_icon);
+    lv_obj_set_pos(img1, 0, 0);
 
+    static lv_style_t style;
+    lv_style_copy(&style, &lv_style_plain);
+    style.image.color = LV_COLOR_BLACK;
+    style.image.intense = LV_OPA_70;
+```
 
 ## Related repositories
 * Littlevgl: https://github.com/littlevgl/lvgl

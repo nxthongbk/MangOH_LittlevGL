@@ -165,6 +165,7 @@
     style.image.color = LV_COLOR_BLACK;
     style.image.intense = LV_OPA_70;
 ```
+   > Check example in lv_examples/lv_tests/lv_test_objx/lv_test_img
 
 ## Related repositories
 * Littlevgl: https://github.com/littlevgl/lvgl

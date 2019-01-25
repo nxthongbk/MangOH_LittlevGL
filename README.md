@@ -134,7 +134,7 @@
    <img src="https://user-images.githubusercontent.com/17214533/51670508-5848e200-1ff9-11e9-9e82-0d3674a0aa87.jpg" width="150" alt="accessibility text"> 
 
 
-* Preload
+* Preload:
 ```c
    static lv_style_t style;
    lv_style_copy(&style, &lv_style_plain);
@@ -152,7 +152,7 @@
    lv_preload_set_style(preload, LV_PRELOAD_STYLE_MAIN, &style);
    ```
    * Image:
-   Convert image to hex data by: https://littlevgl.com/image-converter.
+   > Convert image to hex data by: https://littlevgl.com/image-converter.
    Then copy image data to img_flower_icon.c
    ```c
     lv_obj_t * img1 = lv_img_create(lv_scr_act(), NULL);

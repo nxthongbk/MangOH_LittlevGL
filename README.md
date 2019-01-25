@@ -8,7 +8,7 @@
     * lvgl examples: https://github.com/littlevgl/lv_examples
     * Copy `lvgl/lv_conf_templ.h` change the name to `lv_conf.h` and place next to the lvgl folder
     * Copy `lvgl_examples/lv_ex_conf_templ.h` change the name to `lv_ex_conf.h` and place next to the lvgl folder
-    * Copy `lvgl_drivers/lv_drv_conf_templ.h` change the name to `lv_ex_conf.h` and place next to the lvgl folder
+    * Copy `lvgl_drivers/lv_drv_conf_templ.h` change the name to `lv_drv_conf.h` and place next to the lvgl folder
     * We have project tree like that:
     * <img src="https://user-images.githubusercontent.com/17214533/51661409-612eb900-1fe3-11e9-9b20-0aaa71168f5f.png" width="200" alt="accessibility text"> 
 
